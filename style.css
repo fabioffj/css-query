@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ccc;
+}
+
+#site {
+    width: 1024px;
+    background: #fff;
+    border-radius: 15px;
+    margin: 20px auto;
+    min-height: 500px;
+    padding: 20px;
+}
+
+#topo h1 {
+    text-align: center;
+}
+
+nav {
+    background: #0c133f;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+#imagem-destaque {
+    height: 300px;
+    background-image: url(./img/escritorio.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: 10px auto;
+}
+
+#chamadas {
+    display: flex;
+    gap: 5px;
+}
+
+.box {    
+    border: 2px solid #0c133f;
+    padding: 10px;    
+    width: 100%;    
+}
+
+.box p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+@media(max-width: 1024px) {
+    #site {
+        width: 800px;
+    }
+}
+
+@media(max-width: 800px) {
+    #site {
+        width: 98%;
+        margin: 10px 1%;
+    }
+
+    #topo nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #topo nav a {
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        text-align: center;
+    }
+
+    #imagem-destaque {
+        display: none;
+    }
+}
